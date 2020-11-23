@@ -33,6 +33,7 @@
     "commit": "./node_modules/cz-customizable/standalone.js",
     "coverage": "nyc --reporter=lcov ava",
     "lint": "tsc --noEmit && npx eslint \"src/**/*.ts\" --fix",
+    "prepare": "npm run build",
     "semantic-release": "semantic-release",
     "test": "nyc ava --watch",
     "test:prod": "npm run lint && nyc ava"
@@ -62,6 +63,7 @@
     "fast-safe-stringify": "2.0.7",
     "got": "10.7.0",
     "query-string": "6.11.1",
+    "todoist-rest-api": "mvd7793/todoist-rest-api",
     "uuid": "3.4.0"
   },
   "devDependencies": {
