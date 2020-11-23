@@ -8,12 +8,12 @@ export { default as RESTAdapter } from './rest-adapter';
 export { default as TaskAdapter } from './task-adapter';
 export { default as CommentAdapter } from './comment-adapter';
 
-interface TodoistRESTAPI {
+export interface TodoistRESTAPI {
   [key: string]: TodoistRESTAPIV1;
   v1: TodoistRESTAPIV1;
 }
 
-interface TodoistRESTAPIV1 {
+export interface TodoistRESTAPIV1 {
   [key: string]:
     | TaskAdapter<'task'>
     | RESTAdapter<'project'>
